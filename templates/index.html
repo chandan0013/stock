@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Ploting Stock TDI 12 da</title>
+
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+  </head>
+  <body style="margin:40px">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>Hello, World!</h2>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a target="_blank" href="https://www.heroku.com/">Heroku</a></li>
+            <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a></li>
+            <li><a target="_blank" href="http://jinja.pocoo.org/docs/2.9/">Jinja2</a></li>
+            <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	 
+    <h1>Ploting Stock TDI 12 day</h1>
+    <div class=metanav>
+      <h3>
+	Enter the stock name and the time period (Year/Month)?<br>
+	Enter valid 4 digits year and Months in Format (e. Jan or January). <br>
+      </h3>
+      <form id='userinfoform' method='post' action='/make_plot'>
+	<p>
+	  <a href="/stocks">Stock Name</a>: <input type='text' name='stock' />
+	</p>
+	<p>
+	  Year: <input type='text' name='year' />
+	</p>
+	<p>
+	  Month: <input type='text' name='month' />
+	</p>
+	<p>
+	  <input type='submit' value='SUBMIT' />
+	</p>
+      </form>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
