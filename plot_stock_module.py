@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from   bokeh.plotting import figure, output_file, show
 import quandl
-quandl.ApiConfig.api_key = str(os.getenv('QUANDL_API_KEY'))
+quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
 
 
 test_stock = 'AAPL'
