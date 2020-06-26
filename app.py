@@ -11,7 +11,7 @@ def index():
   return render_template('index.html')
 
 @app.route('/make_plot', methods=['POST'])
-def make_plot():
+def plot():
   plot = read_pandas.read_data(stock=request.form['stock'],
                                    year=request.form['year'],
                                    month=request.form['month'])
