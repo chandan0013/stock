@@ -15,7 +15,7 @@ def read_pandas(stock='AAPL', year='2017', month='01'):
     # Request the data
     mydata = pd.DataFrame()
     try:
-      mydata = quandl.get('WIKI/'+stock, start_date=year+'-01-'+month, end_date=year+'-12-31')
+      mydata = quandl.get('WIKI/'+stock, start_date=year+'-'+month+'-01', end_date=year+'-12-31')
     except:
       return f"COULDN'T FIND STOCK {stock}!"
     
