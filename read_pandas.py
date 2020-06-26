@@ -7,7 +7,7 @@ quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
 
 
 
-def read_pandas(stock=test_stock, year=test_year, month=test_month):
+def read_pandas(stock='AAPL', year='2017', month='01'):
 
     stock = stock.upper()
     
