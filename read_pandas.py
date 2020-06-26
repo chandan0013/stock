@@ -5,9 +5,6 @@ import quandl
 quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
 
 
-test_stock = 'AAPL'
-test_year = '2017'
-test_month = '09'
 
 
 def read_pandas(stock=test_stock, year=test_year, month=test_month):
