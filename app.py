@@ -12,7 +12,7 @@ def index():
 
 @app.route('/make_plot', methods=['POST'])
 def make_plot():
-  plot = plot_stock_module.read_pandas(stock=request.form['stock'],
+  plot = read_pandas.read_data(stock=request.form['stock'],
                                    year=request.form['year'],
                                    month=request.form['month'])
   if isinstance(plot, str):
