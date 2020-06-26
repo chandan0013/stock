@@ -19,7 +19,7 @@ def make_plot():
     return plot
   else:
     script, div = components(plot)
-    return render_template('Stock_plot.html', script=script, div=div)
+    return render_template('stock_plot.html', script=script, div=div)
 
 @app.route('/about')
 def about():
