@@ -7,12 +7,11 @@ quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
 
 
 
-def read_pandas(stock='AAPL', year='2017', month='01'):
+def read_data(stock='AAPL', year='2017', month='01'):
 
     stock = stock.upper()
     
         
-    # Request the data
     mydata = pd.DataFrame()
     try:
       mydata = quandl.get('WIKI/'+stock, start_date=year+'-'+month+'-01', end_date=year+'-12-31')
