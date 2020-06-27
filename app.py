@@ -45,6 +45,7 @@ def plot():
   if isinstance(plot, str):
     return plot
   else:
+        ##invalid stock name error
     script, div = components(plot)
     return render_template('stock_plot.html', script=script, div=div)
 
