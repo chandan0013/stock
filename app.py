@@ -5,15 +5,13 @@ from   bokeh.embed import components
 import pandas as pd
 from   bokeh.plotting import figure, output_file, show
 import quandl
-quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
+#quandl.ApiConfig.api_key = "Your-key"
 
 
 app = Flask(__name__)
 
 def read_data(stock='AAPL', year='2017', month='01'):
-
     stock = stock.upper()
-    
         
     mydata = pd.DataFrame()
     try:
