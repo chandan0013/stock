@@ -8,7 +8,7 @@ import quandl
 quandl.ApiConfig.api_key = "miwt4s4UiJH7JgU1PA1p"
 
 
-
+app = Flask(__name__)
 
 def read_data(stock='AAPL', year='2017', month='01'):
 
@@ -36,8 +36,6 @@ def read_data(stock='AAPL', year='2017', month='01'):
     fig1.line(pd.DatetimeIndex(close_prices.index.values).day,close_prices.values)
     ##error will also returned to main app.py
     return fig1
-
-app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
