@@ -23,9 +23,9 @@ def read_data(stock='AAPL', year='2017', month='01'):
     
     close_prices = pd.Series()
     if month =='12':
-       close_prices = mydata['Close'].loc[(mydata.index >= year+'-'+month)]
+        close_prices = mydata['Close'].loc[(mydata.index >= year+'-'+month)]
     else:
-       close_prices = mydata['Close'].loc[(mydata.index >= year+'-'+month) & (mydata.index <  year+'-'+str(int(month)+1))]
+        close_prices = mydata['Close'].loc[(mydata.index >= year+'-'+month) & (mydata.index <  year+'-'+str(int(month)+1))]
   
     fig1 = figure(title= 'Requested company closing stock during requested period ', x_axis_label= year + '/' + month, y_axis_label='Reported Stock Price')
     
